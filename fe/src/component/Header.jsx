@@ -125,7 +125,7 @@ const Header = () => {
                                 {/* body nav */}
                                 <div className="w-[800px] xl:w-[1000px] ml-16 mt-2 grid grid-cols-4 gap-x-10 xl:gap-x-3 gap-y-4 cursor-pointer">
                                     {parent.map((item) => (
-                                        <div className="">
+                                        <div className="" key={item._id}>
                                             <p className="text-lg font-bold mb-1 ">
                                                 <Link to="/">{item.name}</Link>
                                             </p>

@@ -5,4 +5,12 @@
     body {
         font-family: "Poppins", sans-serif;
     }
+    /* Ẩn scrollbar cho cả trình duyệt Webkit (Chrome, Edge, Safari) và Firefox */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none; /* Ẩn scrollbar trên Chrome, Edge, Safari */
+    }
+
+    .no-scrollbar {
+        scrollbar-width: none; /* Ẩn scrollbar trên Firefox */
+    }
 }
