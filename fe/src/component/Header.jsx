@@ -232,15 +232,13 @@ const Header = () => {
                                         {activeIndex === index && (
                                             <ul className="ms-2 ">
                                                 {item.children.map((child) => (
-                                                    <>
-                                                        <li
-                                                            key={child.id}
-                                                            className="text-[13px] hover:text-yellow-600 bg-white p-3 w-[300px] flex justify-between items-center text-[#828181]"
-                                                        >
-                                                            {child.name}
-                                                            <i className="fa-solid fa-angle-right"></i>
-                                                        </li>
-                                                    </>
+                                                    <li
+                                                        key={child.id}
+                                                        className="text-[13px] hover:text-yellow-600 bg-white p-3 w-[300px] flex justify-between items-center text-[#828181]"
+                                                    >
+                                                        {child.name}
+                                                        <i className="fa-solid fa-angle-right"></i>
+                                                    </li>
                                                 ))}
                                                 <Link
                                                     to="/"
