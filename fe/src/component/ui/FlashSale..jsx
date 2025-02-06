@@ -14,7 +14,7 @@ const FlashSale = () => {
     return (
         <>
             {/* flash Sale */}
-            <div className="w-full bg-[url(https://cdn0.fahasa.com/media/fahasa_web_image/flash_sale_background_image.jpg)] bg-center xl:mt-5 h-[450px]">
+            <div className="w-full bg-[url(https://cdn0.fahasa.com/media/fahasa_web_image/flash_sale_background_image.jpg)] bg-center xl:mt-5 md:mt-5 h-[450px]">
                 <div className="mt-[15px] inline-block">
                     {/* box-1 */}
                     <div className="bg-white w-[410px] md:w-[970px] xl:w-[1190px] ml-[10px] md:ml-[18px] xl:ml-[155px] px-[18px] py-[15px] md:py-[20px] xl:py-[24px] rounded-lg flex justify-between items-center">
@@ -46,8 +46,8 @@ const FlashSale = () => {
                         </div>
                         {/* right */}
                         <div className="mr-0 md:mr-5 xl:mr-5">
-                            <p className="text-[#929394] md:text-[#1478FC] xl:text-[#1478FC] font-semibold">
-                                <span className="hidden md:inline-block xl:inline-block">
+                            <p className="text-[#929394] md:text-[#1478FC] xl:text-[#1478FC] font-semibold cursor-pointer">
+                                <span className="hidden md:inline-block xl:inline-block ">
                                     Xem tất cả
                                 </span>{" "}
                                 <span className="text-xl md:text-sm xl:text-sm">

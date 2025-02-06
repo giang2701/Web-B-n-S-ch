@@ -2,9 +2,12 @@ import React, { useContext, useRef, useState } from "react";
 import { ProductsContext } from "../../context/ContextProducts";
 import Banner from "../../component/Banner";
 import ProductsUi from "../../component/ui/ProductsUi";
-import FlashSale from "../../component/ui/flashSale";
+import FlashSale from "../../component/ui/FlashSale.";
 import ScrollToTop from "../../component/ScrollToTop";
+import BoxCategory from "../../component/ui/BoxCategory";
 import ShoppingTrends from "../../component/ui/ShoppingTrends";
+import BestSellingGoods from "../../component/ui/BestSellingGoods";
+import ProductList from "../../component/ui/BestSellerOfTheWeek";
 
 const Home = () => {
     // để mặc định là phone
@@ -14,7 +17,7 @@ const Home = () => {
     // console.log(data);
     const [like, setLike] = useState(false);
     return (
-        <div className="bg-[#f0f0f0] h-[3000px] relative">
+        <div className="bg-[#f0f0f0] h-[5000px] relative">
             {/* thanh cuộn trang */}
             <ScrollToTop />
             {/* utilities:tiện ích */}
@@ -39,96 +42,17 @@ const Home = () => {
                 <Banner />
             </div>
             {/* box danh mục */}
-            <div className="hidden md:block xl:block ml-0 rounded-md mt-[25px] md:w-[990px] xl:w-[1190px] md:ml-[16px] xl:ml-[155px] bg-white ">
-                <div className="md:p-5 xl:p-5">
-                    {/* header box danh mục  */}
-                    <div className="flex xl:pt-0 xl:py-2 md:pb-4 xl:pb-4 md:border-b md:border-[#bababc] xl:border-b xl:border-[#bababc] ">
-                        <i className="fa-solid fa-layer-group md:text-[32px] xl:text-[32px] md:text-red-500 xl:text-red-500 md:mr-[15px] xl:mr-[15px]"></i>
-                        <p className="text-2xl font-bold text-[#212121]">
-                            Danh mục sản phẩm
-                        </p>
-                    </div>
-                    {/* body box danh mục  */}
-                    <div className="md:mt-4 xl:mt-4 md:px-3 xl:px-3 md:pt-5 xl:pt-5 md:pb-5 xl:pb-5 flex flex-wrap">
-                        {/* sub-box-1 */}
-                        <div className="md:mr-[15px] xl:mr-3">
-                            <img src="https://placehold.co/100x100" alt="" />
-                            <p className="md:ml-[14px] xl:ml-[14px] md:mt-1 xl:mt-1">
-                                Thú Bông
-                            </p>
-                        </div>
-                        {/* sub-box-1 */}
-                        <div className="md:mr-[15px] xl:mr-3">
-                            <img src="https://placehold.co/100x100" alt="" />
-                            <p className="md:ml-[14px] xl:ml-[14px] md:mt-1 xl:mt-1">
-                                Thú Bông
-                            </p>
-                        </div>
-                        {/* sub-box-1 */}
-                        <div className="md:mr-[15px] xl:mr-3">
-                            <img src="https://placehold.co/100x100" alt="" />
-                            <p className="md:ml-[14px] xl:ml-[14px] md:mt-1 xl:mt-1">
-                                Thú Bông
-                            </p>
-                        </div>
-                        {/* sub-box-1 */}
-                        <div className="md:mr-[15px] xl:mr-3">
-                            <img src="https://placehold.co/100x100" alt="" />
-                            <p className="md:ml-[14px] xl:ml-[14px] md:mt-1 xl:mt-1">
-                                Thú Bông
-                            </p>
-                        </div>
-                        {/* sub-box-1 */}
-                        <div className="md:mr-[15px] xl:mr-3">
-                            <img src="https://placehold.co/100x100" alt="" />
-                            <p className="md:ml-[14px] xl:ml-[14px] md:mt-1 xl:mt-1">
-                                Thú Bông
-                            </p>
-                        </div>
-                        {/* sub-box-1 */}
-                        <div className="md:mr-[15px] xl:mr-3">
-                            <img src="https://placehold.co/100x100" alt="" />
-                            <p className="md:ml-[14px] xl:ml-[14px] md:mt-1 xl:mt-1">
-                                Thú Bông
-                            </p>
-                        </div>
-                        {/* sub-box-1 */}
-                        <div className="md:mr-[15px] xl:mr-3">
-                            <img src="https://placehold.co/100x100" alt="" />
-                            <p className="md:ml-[14px] xl:ml-[14px] md:mt-1 xl:mt-1">
-                                Thú Bông
-                            </p>
-                        </div>
-                        {/* sub-box-1 */}
-                        <div className="md:mr-[15px] xl:mr-3">
-                            <img src="https://placehold.co/100x100" alt="" />
-                            <p className="md:ml-[14px] xl:ml-[14px] md:mt-1 xl:mt-1">
-                                Thú Bông
-                            </p>
-                        </div>
-                        {/* sub-box-1 */}
-                        <div className="md:mr-[15px] xl:mr-3 md:hidden xl:block">
-                            <img src="https://placehold.co/100x100" alt="" />
-                            <p className="md:ml-[14px] xl:ml-[14px] md:mt-1 xl:mt-1">
-                                Thú Bông
-                            </p>
-                        </div>
-                        {/* sub-box-1 */}
-                        <div className="md:mr-[15px] xl:mr-3 md:hidden xl:block">
-                            <img src="https://placehold.co/100x100" alt="" />
-                            <p className="md:ml-[14px] xl:ml-[14px] md:mt-1 xl:mt-1">
-                                Thú Bông
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <BoxCategory />
             {/* flash Sale */}
             <FlashSale />
             {/* products : đổ sản phẩm ra trang */}
             <ProductsUi />
             {/* shopping trends:xu hướng mua sắm */}
             <ShoppingTrends />
+            {/* hàng hót  */}
+            <BestSellingGoods />
+            {/*  */}
+            <ProductList />
         </div>
     );
 };
