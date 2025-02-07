@@ -1,13 +1,13 @@
-import React, { useContext, useRef, useState } from "react";
-import { ProductsContext } from "../../context/ContextProducts";
+import React, { useContext, useState } from "react";
 import Banner from "../../component/Banner";
-import ProductsUi from "../../component/ui/ProductsUi";
-import FlashSale from "../../component/ui/FlashSale.";
 import ScrollToTop from "../../component/ScrollToTop";
-import BoxCategory from "../../component/ui/BoxCategory";
-import ShoppingTrends from "../../component/ui/ShoppingTrends";
+import BestSellerOfTheWeek from "../../component/ui/BestSellerOfTheWeek";
 import BestSellingGoods from "../../component/ui/BestSellingGoods";
-import ProductList from "../../component/ui/BestSellerOfTheWeek";
+import BoxCategory from "../../component/ui/BoxCategory";
+import FlashSale from "../../component/ui/FlashSale.";
+import ProductsUi from "../../component/ui/ProductsUi";
+import ShoppingTrends from "../../component/ui/ShoppingTrends";
+import { ProductsContext } from "../../context/ContextProducts";
 
 const Home = () => {
     // để mặc định là phone
@@ -17,7 +17,7 @@ const Home = () => {
     // console.log(data);
     const [like, setLike] = useState(false);
     return (
-        <div className="bg-[#f0f0f0] h-[5000px] relative">
+        <div className="bg-[#f0f0f0] relative">
             {/* thanh cuộn trang */}
             <ScrollToTop />
             {/* utilities:tiện ích */}
@@ -52,7 +52,7 @@ const Home = () => {
             {/* hàng hót  */}
             <BestSellingGoods />
             {/*  */}
-            <ProductList />
+            <BestSellerOfTheWeek />
         </div>
     );
 };

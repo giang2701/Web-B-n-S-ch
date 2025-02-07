@@ -33,7 +33,13 @@ const Header = () => {
                     <div className="w-full ms-2 lg:w-full xl:w-[1263px] flex items-center">
                         {/* logo */}
                         <div className="font-[600] text-[15px] lg:font-[800] lg:text-[25px] xl:font-[900] xl:text-[30px] text-[#b70b0b]  lg:ms-5  lg:me-1 xl:me-3 hidden md:block">
-                            Nvg271.c🍅m
+                            Nvg271.c
+                            <img
+                                src="../../public/image/logo.png"
+                                alt=""
+                                className="inline-block w-[80px] -ml-[17px] -mr-[17px]"
+                            />
+                            m
                         </div>
                         {/* bar-pc */}
                         <div
