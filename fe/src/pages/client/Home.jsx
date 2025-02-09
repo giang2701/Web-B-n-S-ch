@@ -1,13 +1,13 @@
 import React, { useContext, useState } from "react";
-import Banner from "../../component/Banner";
-import ScrollToTop from "../../component/ScrollToTop";
-import BestSellerOfTheWeek from "../../component/ui/BestSellerOfTheWeek";
-import BestSellingGoods from "../../component/ui/BestSellingGoods";
-import BoxCategory from "../../component/ui/BoxCategory";
-import FlashSale from "../../component/ui/FlashSale.";
-import ProductsUi from "../../component/ui/ProductsUi";
-import ShoppingTrends from "../../component/ui/ShoppingTrends";
-import { ProductsContext } from "../../context/ContextProducts";
+import Banner from "./../../component/Banner";
+import ScrollToTop from "./../../component/ScrollToTop";
+import BoxCategory from "../../component/ui/homepage/BoxCategory";
+import FlashSale from "./../../component/ui/homepage/FlashSale.";
+import ProductsUi from "../../component/ui/homepage/ProductsUi";
+import ShoppingTrends from "./../../component/ui/homepage/ShoppingTrends";
+import BestSellingGoods from "../../component/ui/homepage/BestSellingGoods";
+import BestSellerOfTheWeek from "../../component/ui/homepage/BestSellerOfTheWeek";
+import { ProductsContext } from "./../../context/ContextProducts";
 
 const Home = () => {
     // để mặc định là phone

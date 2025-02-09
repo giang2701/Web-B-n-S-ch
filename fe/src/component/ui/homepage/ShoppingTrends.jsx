@@ -3,7 +3,7 @@ import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css"; //Import CSS mặc định
 
 const ShoppingTrends = () => {
-    const [activeTab, setActiveTab] = useState(null); // Lưu trạng thái tab đang được chọn
+    const [activeTab, setActiveTab] = useState(1); // Lưu trạng thái tab đang được chọn
 
     const handleClick = (tabIndex) => {
         setActiveTab(tabIndex); // Cập nhật tab được chọn
